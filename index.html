@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Ahmad Wafil Marom</title>
+    <link rel="stylesheet" href="style.css"> <!-- Pastikan file CSS-nya bernama style.css -->
+</head>
+
+<body>
+
+    <!-- Navigasi -->
+    <div class="navbar">
+        <a href="#beranda">BERANDA</a>
+        <a href="#tentang">Tentang Saya</a>
+        <a href="#portofolio">Portofolio</a>
+        <div class="dropdown">
+            <a href="javascript:void(0)" onclick="toggleDropdown()">Lainnya ▾</a>
+            <div class="dropdown-content" id="dropdown-menu">
+                <a href="https://www.instagram.com/cupen_snr?igsh=MTdtcDRoNGxtMGI1dg==" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/santri.mania.100" target="_blank">Facebook</a>
+                <a href="https://wa.me/6281248031585?text=Halo%20saya%20ingin%20bertanya" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profil -->
+    <section class="profil" id="beranda">
+        <img src="profil.jpeg" alt="Foto Profil 1"> <!-- Ganti dengan path gambar -->
+        <div class="profil-text">
+            Halo nama saya Ahmad Wafil Marom seorang mahasiswa teknik Informatika Unugiri Bojonegoro
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section class="tentang" id="tentang">
+        <div>
+            <h2 class="button">Tentang Saya</h2>
+            <p>
+                Halo! Saya Ahmad Wafil Marom, seorang mahasiswa berdedikasi yang sedang menempuh pendidikan di
+                program studi Teknik Informatika di Universitas Nahdlatul Ulama Giri (UNUGIRI). Saya memiliki
+                ketertarikan yang besar terhadap dunia teknologi,
+                khususnya dalam pengembangan perangkat lunak, kecerdasan buatan, dan solusi digital inovatif.
+            </p>
+        </div>
+        <img src="mm.jpeg" alt="Foto Profil 2">
+    </section>
+
+    <!-- Portofolio -->
+    <section class="portofolio" id="portofolio">
+        <h2 class="button">Portofolio</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Kegiatan</th>
+                    <th>Waktu Kegiatan</th>
+                    <th>Bukti Kegiatan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Lomba Lari</td>
+                    <td>07:00 WIB</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Baca Buku</td>
+                    <td>10:00 WIB</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Memancing</td>
+                    <td>13:00 WIB</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- JavaScript toggle dropdown -->
+    <script>
+        function toggleDropdown() {
+            var menu = document.getElementById("dropdown-menu");
+            menu.style.display = (menu.style.display === "block") ? "none" : "block";
+        }
+
+        // Tutup dropdown kalau klik di luar
+        window.onclick = function (event) {
+            if (!event.target.closest('.dropdown')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    dropdowns[i].style.display = "none";
+                }
+            }
+        };
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Kedua</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar sederhana -->
+    <div class="navbar">
+        <a href="index.html">← Kembali ke Beranda</a>
+    </div>
+
+    <!-- Konten Halaman Kedua -->
+    <section>
+        <h2 class="button">Opini</h2>
+        <div class="photo-row">
+            <div class="photo-item">
+                <img src="opini1.jpeg" alt="opini 1" />
+                <p>b indo</p>
+            </div>
+            <div class="photo-item">
+                <img src="opini2.jpeg" alt="opini 2" />
+                <p>foto shot</p>
+            </div>
+            <div class="photo-item">
+                <img src="opini3.jpeg" alt="opini 3" />
+                <p>mancing</p>
+            </div>
+            </section>
+            
+
+    </section>
+    <section class="hubungi" id="hubungi">
+        <h2 class="button">Hubungi Saya</h2>
+        <div class="hubungi-container">
+          
+          <!-- Formulir Kontak -->
+          <form class="form-kontak">
+            <input type="text" name="nama" placeholder="Nama" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="pesan" placeholder="Isi Pesan" required></textarea>
+            <button type="submit">Kirim</button>
+          </form>
+      
+          <!-- Maps -->
+          <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.986702358354!2d111.71933217363186!3d-7.010846292990581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7771716305a70f%3A0xba91b56d24eafecc!2sNew%20Celluler1!5e0!3m2!1sid!2sid!4v1745737271407!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+            </iframe>
+          </div>
+      </section>
+      <footer class="footer">
+        <p>© 2025 by Ahmad Wafil Marom</p>
+      </footer>      
+</body>
+
+</html>
